@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC9D61261E108C1E00B88C2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9D61251E108C1E00B88C2C /* AppDelegate.swift */; };
+		AC9D61281E108C1E00B88C2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9D61271E108C1E00B88C2C /* ViewController.swift */; };
+		AC9D612B1E108C1E00B88C2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9D61291E108C1E00B88C2C /* Main.storyboard */; };
+		AC9D612D1E108C1E00B88C2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9D612C1E108C1E00B88C2C /* Assets.xcassets */; };
+		AC9D61301E108C1E00B88C2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9D612E1E108C1E00B88C2C /* LaunchScreen.storyboard */; };
+		AC9D61351E108C1E00B88C2C /* BitCoinPrice WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AC9D61341E108C1E00B88C2C /* BitCoinPrice WatchKit App.app */; };
+		AC9D613B1E108C1E00B88C2C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9D61391E108C1E00B88C2C /* Interface.storyboard */; };
+		AC9D613D1E108C1E00B88C2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9D613C1E108C1E00B88C2C /* Assets.xcassets */; };
+		AC9D61441E108C1F00B88C2C /* BitCoinPrice WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AC9D61431E108C1F00B88C2C /* BitCoinPrice WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AC9D61491E108C1F00B88C2C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9D61481E108C1F00B88C2C /* InterfaceController.swift */; };
+		AC9D614B1E108C1F00B88C2C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9D614A1E108C1F00B88C2C /* ExtensionDelegate.swift */; };
+		AC9D614D1E108C1F00B88C2C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9D614C1E108C1F00B88C2C /* ComplicationController.swift */; };
+		AC9D614F1E108C1F00B88C2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9D614E1E108C1F00B88C2C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC9D61361E108C1E00B88C2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC9D611A1E108C1E00B88C2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC9D61331E108C1E00B88C2C;
+			remoteInfo = "BitCoinPrice WatchKit App";
+		};
+		AC9D61451E108C1F00B88C2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC9D611A1E108C1E00B88C2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC9D61421E108C1F00B88C2C;
+			remoteInfo = "BitCoinPrice WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AC9D61561E108C1F00B88C2C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AC9D61441E108C1F00B88C2C /* BitCoinPrice WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC9D615A1E108C1F00B88C2C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AC9D61351E108C1E00B88C2C /* BitCoinPrice WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AC9D61221E108C1E00B88C2C /* BitCoinPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitCoinPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC9D61251E108C1E00B88C2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC9D61271E108C1E00B88C2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC9D612A1E108C1E00B88C2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC9D612C1E108C1E00B88C2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC9D612F1E108C1E00B88C2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC9D61311E108C1E00B88C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC9D61341E108C1E00B88C2C /* BitCoinPrice WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BitCoinPrice WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC9D613A1E108C1E00B88C2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		AC9D613C1E108C1E00B88C2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC9D613E1E108C1E00B88C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC9D61431E108C1F00B88C2C /* BitCoinPrice WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BitCoinPrice WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC9D61481E108C1F00B88C2C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		AC9D614A1E108C1F00B88C2C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		AC9D614C1E108C1F00B88C2C /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		AC9D614E1E108C1F00B88C2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC9D61501E108C1F00B88C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC9D611F1E108C1E00B88C2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC9D61401E108C1F00B88C2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC9D61191E108C1E00B88C2C = {
+			isa = PBXGroup;
+			children = (
+				AC9D61241E108C1E00B88C2C /* BitCoinPrice */,
+				AC9D61381E108C1E00B88C2C /* BitCoinPrice WatchKit App */,
+				AC9D61471E108C1F00B88C2C /* BitCoinPrice WatchKit Extension */,
+				AC9D61231E108C1E00B88C2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC9D61231E108C1E00B88C2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC9D61221E108C1E00B88C2C /* BitCoinPrice.app */,
+				AC9D61341E108C1E00B88C2C /* BitCoinPrice WatchKit App.app */,
+				AC9D61431E108C1F00B88C2C /* BitCoinPrice WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC9D61241E108C1E00B88C2C /* BitCoinPrice */ = {
+			isa = PBXGroup;
+			children = (
+				AC9D61251E108C1E00B88C2C /* AppDelegate.swift */,
+				AC9D61271E108C1E00B88C2C /* ViewController.swift */,
+				AC9D61291E108C1E00B88C2C /* Main.storyboard */,
+				AC9D612C1E108C1E00B88C2C /* Assets.xcassets */,
+				AC9D612E1E108C1E00B88C2C /* LaunchScreen.storyboard */,
+				AC9D61311E108C1E00B88C2C /* Info.plist */,
+			);
+			path = BitCoinPrice;
+			sourceTree = "<group>";
+		};
+		AC9D61381E108C1E00B88C2C /* BitCoinPrice WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				AC9D61391E108C1E00B88C2C /* Interface.storyboard */,
+				AC9D613C1E108C1E00B88C2C /* Assets.xcassets */,
+				AC9D613E1E108C1E00B88C2C /* Info.plist */,
+			);
+			path = "BitCoinPrice WatchKit App";
+			sourceTree = "<group>";
+		};
+		AC9D61471E108C1F00B88C2C /* BitCoinPrice WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AC9D61481E108C1F00B88C2C /* InterfaceController.swift */,
+				AC9D614A1E108C1F00B88C2C /* ExtensionDelegate.swift */,
+				AC9D614C1E108C1F00B88C2C /* ComplicationController.swift */,
+				AC9D614E1E108C1F00B88C2C /* Assets.xcassets */,
+				AC9D61501E108C1F00B88C2C /* Info.plist */,
+			);
+			path = "BitCoinPrice WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC9D61211E108C1E00B88C2C /* BitCoinPrice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC9D615B1E108C1F00B88C2C /* Build configuration list for PBXNativeTarget "BitCoinPrice" */;
+			buildPhases = (
+				AC9D611E1E108C1E00B88C2C /* Sources */,
+				AC9D611F1E108C1E00B88C2C /* Frameworks */,
+				AC9D61201E108C1E00B88C2C /* Resources */,
+				AC9D615A1E108C1F00B88C2C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC9D61371E108C1E00B88C2C /* PBXTargetDependency */,
+			);
+			name = BitCoinPrice;
+			productName = BitCoinPrice;
+			productReference = AC9D61221E108C1E00B88C2C /* BitCoinPrice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC9D61331E108C1E00B88C2C /* BitCoinPrice WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC9D61571E108C1F00B88C2C /* Build configuration list for PBXNativeTarget "BitCoinPrice WatchKit App" */;
+			buildPhases = (
+				AC9D61321E108C1E00B88C2C /* Resources */,
+				AC9D61561E108C1F00B88C2C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC9D61461E108C1F00B88C2C /* PBXTargetDependency */,
+			);
+			name = "BitCoinPrice WatchKit App";
+			productName = "BitCoinPrice WatchKit App";
+			productReference = AC9D61341E108C1E00B88C2C /* BitCoinPrice WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		AC9D61421E108C1F00B88C2C /* BitCoinPrice WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC9D61531E108C1F00B88C2C /* Build configuration list for PBXNativeTarget "BitCoinPrice WatchKit Extension" */;
+			buildPhases = (
+				AC9D613F1E108C1F00B88C2C /* Sources */,
+				AC9D61401E108C1F00B88C2C /* Frameworks */,
+				AC9D61411E108C1F00B88C2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BitCoinPrice WatchKit Extension";
+			productName = "BitCoinPrice WatchKit Extension";
+			productReference = AC9D61431E108C1F00B88C2C /* BitCoinPrice WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC9D611A1E108C1E00B88C2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Digital Mirko";
+				TargetAttributes = {
+					AC9D61211E108C1E00B88C2C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = EQNJ9FG9YA;
+						ProvisioningStyle = Automatic;
+					};
+					AC9D61331E108C1E00B88C2C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = EQNJ9FG9YA;
+						ProvisioningStyle = Automatic;
+					};
+					AC9D61421E108C1F00B88C2C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = EQNJ9FG9YA;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AC9D611D1E108C1E00B88C2C /* Build configuration list for PBXProject "BitCoinPrice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC9D61191E108C1E00B88C2C;
+			productRefGroup = AC9D61231E108C1E00B88C2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC9D61211E108C1E00B88C2C /* BitCoinPrice */,
+				AC9D61331E108C1E00B88C2C /* BitCoinPrice WatchKit App */,
+				AC9D61421E108C1F00B88C2C /* BitCoinPrice WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC9D61201E108C1E00B88C2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC9D61301E108C1E00B88C2C /* LaunchScreen.storyboard in Resources */,
+				AC9D612D1E108C1E00B88C2C /* Assets.xcassets in Resources */,
+				AC9D612B1E108C1E00B88C2C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC9D61321E108C1E00B88C2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC9D613D1E108C1E00B88C2C /* Assets.xcassets in Resources */,
+				AC9D613B1E108C1E00B88C2C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC9D61411E108C1F00B88C2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC9D614F1E108C1F00B88C2C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC9D611E1E108C1E00B88C2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC9D61281E108C1E00B88C2C /* ViewController.swift in Sources */,
+				AC9D61261E108C1E00B88C2C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC9D613F1E108C1F00B88C2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC9D614B1E108C1F00B88C2C /* ExtensionDelegate.swift in Sources */,
+				AC9D61491E108C1F00B88C2C /* InterfaceController.swift in Sources */,
+				AC9D614D1E108C1F00B88C2C /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC9D61371E108C1E00B88C2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC9D61331E108C1E00B88C2C /* BitCoinPrice WatchKit App */;
+			targetProxy = AC9D61361E108C1E00B88C2C /* PBXContainerItemProxy */;
+		};
+		AC9D61461E108C1F00B88C2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC9D61421E108C1F00B88C2C /* BitCoinPrice WatchKit Extension */;
+			targetProxy = AC9D61451E108C1F00B88C2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC9D61291E108C1E00B88C2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC9D612A1E108C1E00B88C2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC9D612E1E108C1E00B88C2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC9D612F1E108C1E00B88C2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AC9D61391E108C1E00B88C2C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC9D613A1E108C1E00B88C2C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC9D61511E108C1F00B88C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC9D61521E108C1F00B88C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC9D61541E108C1F00B88C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = EQNJ9FG9YA;
+				INFOPLIST_FILE = "BitCoinPrice WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitalmirko.BitCoinPrice.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		AC9D61551E108C1F00B88C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = EQNJ9FG9YA;
+				INFOPLIST_FILE = "BitCoinPrice WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitalmirko.BitCoinPrice.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		AC9D61581E108C1F00B88C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EQNJ9FG9YA;
+				IBSC_MODULE = BitCoinPrice_WatchKit_Extension;
+				INFOPLIST_FILE = "BitCoinPrice WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitalmirko.BitCoinPrice.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		AC9D61591E108C1F00B88C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EQNJ9FG9YA;
+				IBSC_MODULE = BitCoinPrice_WatchKit_Extension;
+				INFOPLIST_FILE = "BitCoinPrice WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitalmirko.BitCoinPrice.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		AC9D615C1E108C1F00B88C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EQNJ9FG9YA;
+				INFOPLIST_FILE = BitCoinPrice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitalmirko.BitCoinPrice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AC9D615D1E108C1F00B88C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EQNJ9FG9YA;
+				INFOPLIST_FILE = BitCoinPrice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitalmirko.BitCoinPrice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC9D611D1E108C1E00B88C2C /* Build configuration list for PBXProject "BitCoinPrice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC9D61511E108C1F00B88C2C /* Debug */,
+				AC9D61521E108C1F00B88C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC9D61531E108C1F00B88C2C /* Build configuration list for PBXNativeTarget "BitCoinPrice WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC9D61541E108C1F00B88C2C /* Debug */,
+				AC9D61551E108C1F00B88C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AC9D61571E108C1F00B88C2C /* Build configuration list for PBXNativeTarget "BitCoinPrice WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC9D61581E108C1F00B88C2C /* Debug */,
+				AC9D61591E108C1F00B88C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AC9D615B1E108C1F00B88C2C /* Build configuration list for PBXNativeTarget "BitCoinPrice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC9D615C1E108C1F00B88C2C /* Debug */,
+				AC9D615D1E108C1F00B88C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC9D611A1E108C1E00B88C2C /* Project object */;
+}
