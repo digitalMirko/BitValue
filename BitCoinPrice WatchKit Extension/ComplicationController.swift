@@ -54,7 +54,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
                         if complication.family == .modularLarge {
                             
                             let template = CLKComplicationTemplateModularLargeStandardBody()
-                            template.headerTextProvider = CLKSimpleTextProvider(text: "Bit Price")
+                            template.headerTextProvider = CLKSimpleTextProvider(text: "BitPrice")
                             
                             let formatter = NumberFormatter()
                             formatter.numberStyle = .currency
@@ -76,12 +76,6 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             }
             }.resume()
 
-        
-        
-        
-        handler(nil)
-        
-        
     }
     
     // MARK: - Placeholder Templates

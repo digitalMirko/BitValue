@@ -22,7 +22,7 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
         
-        if let price = UserDefaults.standard.value(forKey: "price") as? NSNumber {
+        if (UserDefaults.standard.value(forKey: "price") as? NSNumber) != nil {
             // We have a previous price
             self.updatingLbl.setText("Updating...")
             let formatter = NumberFormatter()
@@ -67,7 +67,15 @@ class InterfaceController: WKInterfaceController {
                         
                         UserDefaults.standard.set(price, forKey: "price")
                         UserDefaults.standard.synchronize()
-                    
+                        
+                        if CLKComplicationServer.sharedInstance().activeComplications != nil {
+                        
+                            for comp in CLKComplicationServer.sharedInstance().activeComplications! {
+                                CLKComplicationServer.sharedInstance().reloadTimeline(for: comp)
+                            }
+                        
+                        }
+                        
                     } catch {}
                 }
             } else {
