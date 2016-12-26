@@ -1,0 +1,17 @@
+Bit Coin Price API used: https://api.coindesk.com/v1/bpi/currentprice.json
+
+{"time":{"updated":"Dec 25, 2016 23:52:00 UTC","updatedISO":"2016-12-25T23:52:00+00:00","updateduk":"Dec 25, 2016 at 23:52 GMT"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","bpi":{"USD":{"code":"USD","symbol":"&#36;","rate":"894.8638","description":"United States Dollar","rate_float":894.8638},"GBP":{"code":"GBP","symbol":"&pound;","rate":"729.0759","description":"British Pound Sterling","rate_float":729.0759},"EUR":{"code":"EUR","symbol":"&euro;","rate":"855.6329","description":"Euro","rate_float":855.6329}}}
+
+******************************************************************
+Found using Google: search term: bitcoin price api
+
+Company selected for information: Coin Desk
+http://www.coindesk.com/api/
+
+CoinDesk Bitcoin Price Index API
+
+CoinDesk provides a simple API to make its Bitcoin Price Index (BPI) data programmatically available to others. You are free to use this API to include our data in any application or website as you see fit, as long as each page or app that uses it includes the text “Powered by CoinDesk”, linking to our price page. We'd also appreciate if you could email us at index@coindesk.com to let us know about your service and how you're using the CoinDesk BPI. CoinDesk data is made available through a number of HTTP resources, and data is returned in JSON format. Please do not abuse our service.
+BPI real-time data
+
+On the CoinDesk website, we publish the BPI in USD, EUR, and GBP, calculated every minute, based on criteria as discussed on the CoinDesk BPI page. This same data can be retrieved using the endpoint:
+http(s)://api.coindesk.com/v1/bpi/currentprice.json

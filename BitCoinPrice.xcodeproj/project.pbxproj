@@ -20,6 +20,9 @@
 		AC9D614B1E108C1F00B88C2C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9D614A1E108C1F00B88C2C /* ExtensionDelegate.swift */; };
 		AC9D614D1E108C1F00B88C2C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9D614C1E108C1F00B88C2C /* ComplicationController.swift */; };
 		AC9D614F1E108C1F00B88C2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9D614E1E108C1F00B88C2C /* Assets.xcassets */; };
+		AC9D615F1E10939000B88C2C /* BitcoinPriceAPIinfo.txt in Resources */ = {isa = PBXBuildFile; fileRef = AC9D615E1E10939000B88C2C /* BitcoinPriceAPIinfo.txt */; };
+		AC9D61601E10939000B88C2C /* BitcoinPriceAPIinfo.txt in Resources */ = {isa = PBXBuildFile; fileRef = AC9D615E1E10939000B88C2C /* BitcoinPriceAPIinfo.txt */; };
+		AC9D61611E10939000B88C2C /* BitcoinPriceAPIinfo.txt in Resources */ = {isa = PBXBuildFile; fileRef = AC9D615E1E10939000B88C2C /* BitcoinPriceAPIinfo.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,7 @@
 		AC9D614C1E108C1F00B88C2C /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		AC9D614E1E108C1F00B88C2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC9D61501E108C1F00B88C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC9D615E1E10939000B88C2C /* BitcoinPriceAPIinfo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BitcoinPriceAPIinfo.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,7 @@
 				AC9D61391E108C1E00B88C2C /* Interface.storyboard */,
 				AC9D613C1E108C1E00B88C2C /* Assets.xcassets */,
 				AC9D613E1E108C1E00B88C2C /* Info.plist */,
+				AC9D615E1E10939000B88C2C /* BitcoinPriceAPIinfo.txt */,
 			);
 			path = "BitCoinPrice WatchKit App";
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 			files = (
 				AC9D61301E108C1E00B88C2C /* LaunchScreen.storyboard in Resources */,
 				AC9D612D1E108C1E00B88C2C /* Assets.xcassets in Resources */,
+				AC9D615F1E10939000B88C2C /* BitcoinPriceAPIinfo.txt in Resources */,
 				AC9D612B1E108C1E00B88C2C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC9D613D1E108C1E00B88C2C /* Assets.xcassets in Resources */,
+				AC9D61601E10939000B88C2C /* BitcoinPriceAPIinfo.txt in Resources */,
 				AC9D613B1E108C1E00B88C2C /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC9D61611E10939000B88C2C /* BitcoinPriceAPIinfo.txt in Resources */,
 				AC9D614F1E108C1F00B88C2C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
