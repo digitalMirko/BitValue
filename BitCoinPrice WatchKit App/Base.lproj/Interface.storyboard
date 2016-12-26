@@ -21,6 +21,10 @@
                         </label>
                         <label alignment="center" text="Updating...." id="x6l-cX-t1Z"/>
                     </items>
+                    <connections>
+                        <outlet property="priceLbl" destination="M7L-JI-aFY" id="CAy-TU-DVn"/>
+                        <outlet property="updatingLbl" destination="x6l-cX-t1Z" id="dVG-6z-z8w"/>
+                    </connections>
                 </controller>
             </objects>
         </scene>

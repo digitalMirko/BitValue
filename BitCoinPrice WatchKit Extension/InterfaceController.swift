@@ -11,6 +11,11 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
+    
+   
+    @IBOutlet var priceLbl: WKInterfaceLabel!
+    
+    @IBOutlet var updatingLbl: WKInterfaceLabel!
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -37,12 +42,22 @@ class InterfaceController: WKInterfaceController {
         
         URLSession.shared.dataTask(with: url) { (data:Data?, response:URLResponse?, error:Error?) in
             if error == nil {
-                print("it worked")
+                print("it works")
                 
                 if data != nil {
-                    let json = JSONSerialization.jsonObject(with: data!, options: [])
-                    as? [String:Any]
+                    do {
+                        let json = try JSONSerialization.jsonObject(with: data!, options: []) as! [String:Any]
+                        
+                        guard let bpi = json["bpi"] as? [String:Any], let USD = bpi["USD"] as? [String:Any],
+                            let rateFloat = USD["rate_float"] as? Float  else {
+                            return
+                        }
+                        // Check to see if data is coming over
+//                        print(rateFloat)
+                        
+                        self.priceLbl.setText("$\(rateFloat)")
                     
+                    } catch {}
                 }
             } else {
                 print("it didnt work")
