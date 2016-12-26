@@ -15,5 +15,7 @@ So if you have it enabled for the app you will see the Bit Coin information ther
 as your home screen with the various Compilations showing you can also access the app from that screen too.
 By simply tapping on either of the enabled Bit Coin screens you will be transported back into the app.
 
+Everytime the app runs it shows the most current Bit Coin Value in U.S. Dollar format.
+
 The Bit Coin data is generated via JSON from Coin Desk
 Bit Coin Price API used: https://api.coindesk.com/v1/bpi/currentprice.json
