@@ -17,23 +17,25 @@ class InterfaceController: WKInterfaceController {
     
     @IBOutlet var updatingLbl: WKInterfaceLabel!
 
-    override func awake(withContext context: Any?) {
-        super.awake(withContext: context)
-        
-        // Configure interface objects here.
-    }
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
         
+        if let price = UserDefaults.standard.value(forKey: "price") as? NSNumber {
+            // We have a previous price
+            self.updatingLbl.setText("Updating...")
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .currency
+            formatter.locale = Locale(identifier: "en_US")
+        } else {
+            // If we don't have a previous price
+            priceLbl.setText("Getting Price")
+            self.updatingLbl.setText("")
+        }
         getPrice()
     }
     
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
-    }
     
     // This function goes out to the internet to coindesk and gets the current price of Bitcoin, then brings it back
     func getPrice(){
@@ -49,13 +51,22 @@ class InterfaceController: WKInterfaceController {
                         let json = try JSONSerialization.jsonObject(with: data!, options: []) as! [String:Any]
                         
                         guard let bpi = json["bpi"] as? [String:Any], let USD = bpi["USD"] as? [String:Any],
-                            let rateFloat = USD["rate_float"] as? Float  else {
+                            let price = USD["rate_float"] as? NSNumber  else {
                             return
                         }
                         // Check to see if data is coming over
 //                        print(rateFloat)
                         
-                        self.priceLbl.setText("$\(rateFloat)")
+                        // U.S. Dollars formatter
+                        let formatter = NumberFormatter()
+                        formatter.numberStyle = .currency
+                        formatter.locale = Locale(identifier: "en_US")
+                        
+                        self.priceLbl.setText(formatter.string(from: price))
+                        self.updatingLbl.setText("Updated")
+                        
+                        UserDefaults.standard.set(price, forKey: "price")
+                        UserDefaults.standard.synchronize()
                     
                     } catch {}
                 }

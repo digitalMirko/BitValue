@@ -15,11 +15,11 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="BitCoinPrice_WatchKit_App" customModuleProvider="target">
                     <items>
                         <imageView width="0.59999999999999998" height="0.55000000000000004" alignment="center" image="BitCoin" contentMode="scaleAspectFit" id="dvf-rV-JRF"/>
-                        <label alignment="center" text="$888.37" id="M7L-JI-aFY">
+                        <label alignment="center" text=" " id="M7L-JI-aFY">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <fontDescription key="font" type="system" weight="semibold" pointSize="28"/>
                         </label>
-                        <label alignment="center" text="Updating...." id="x6l-cX-t1Z"/>
+                        <label alignment="center" text=" " id="x6l-cX-t1Z"/>
                     </items>
                     <connections>
                         <outlet property="priceLbl" destination="M7L-JI-aFY" id="CAy-TU-DVn"/>
